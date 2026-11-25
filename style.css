@@ -321,16 +321,16 @@ footer{
 
 
 @media(max-width:768px){
+    body{
+        overflow-x: hidden
+    }
+
     nav{
         padding: 12px 20px
     }
 
     nav ul{
-        gap: 14px
-    }
-
-    nav a{
-        font-size: 13px
+        display: none
     }
 
     section{
@@ -341,7 +341,7 @@ footer{
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
-        padding: 110px 20px 45px
+        padding: 105px 20px 45px
     }
 
     .top h1{
@@ -354,17 +354,18 @@ footer{
         align-self: center
     }
 
-    .About{
-        gap: 20px
-    }
-
     .skills,
     .myProjects,
     .contactMe{
         flex-direction: column
     }
 
+    .skills{
+        gap: 12px
+    }
+
     .project{
+        width: 100%;
         align-items: flex-start
     }
 
@@ -383,15 +384,8 @@ footer{
 }
 
 @media(max-width:480px){
-    nav{
-        align-items: flex-start
-    }
-
-    nav ul{
-        max-width: 210px;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        gap: 8px 12px
+    .heading{
+        font-size: 17px
     }
 
     .top h1{
@@ -405,6 +399,10 @@ footer{
     .PP{
         width: 160px;
         height: 160px
+    }
+
+    .skills{
+        width: 100%
     }
 
     .project{
@@ -426,6 +424,7 @@ footer{
     }
 
     footer{
+        justify-content: center;
         text-align: center
     }
 }
