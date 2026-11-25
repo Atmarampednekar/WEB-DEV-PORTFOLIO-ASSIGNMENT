@@ -321,16 +321,112 @@ footer{
 
 
 @media(max-width:768px){
-    section,.intro{
-        padding:25px 20px
-    }
-
-    .intro,.about,.contact,.projects,.skills{
-        flex-direction:column
+    nav{
+        padding: 12px 20px
     }
 
     nav ul{
-        display:none
+        gap: 14px
+    }
+
+    nav a{
+        font-size: 13px
+    }
+
+    section{
+        padding: 28px 20px
+    }
+
+    .top{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 110px 20px 45px
+    }
+
+    .top h1{
+        font-size: 30px
+    }
+
+    .PP{
+        width: 180px;
+        height: 180px;
+        align-self: center
+    }
+
+    .About{
+        gap: 20px
+    }
+
+    .skills,
+    .myProjects,
+    .contactMe{
+        flex-direction: column
+    }
+
+    .project{
+        align-items: flex-start
+    }
+
+    .contactMe{
+        gap: 20px
+    }
+
+    .conSec{
+        width: 100%;
+        padding: 20px 0
+    }
+
+    footer{
+        padding: 18px 20px
+    }
+}
+
+@media(max-width:480px){
+    nav{
+        align-items: flex-start
+    }
+
+    nav ul{
+        max-width: 210px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 8px 12px
+    }
+
+    .top h1{
+        font-size: 26px
+    }
+
+    .top p{
+        font-size: 15px
+    }
+
+    .PP{
+        width: 160px;
+        height: 160px
+    }
+
+    .project{
+        flex-direction: column
+    }
+
+    .Pi{
+        width: 100%;
+        height: 180px;
+        object-fit: cover
+    }
+
+    .conGrid{
+        grid-template-columns: 1fr
+    }
+
+    .streched{
+        grid-column: 1
+    }
+
+    footer{
+        text-align: center
     }
 }
 
